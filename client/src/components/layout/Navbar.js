@@ -54,7 +54,7 @@ class Navbar extends Component {
       <nav className="navbar navbar-expand-sm navbar-dark bg-info mb-4">
         <div className="container">
           <Link className="navbar-brand" to="/">
-            Richmond Soccer
+          <i class="fas fa-futbol"> RVSL</i>
           </Link>
           <button
             className="navbar-toggler"

@@ -18,7 +18,7 @@ class Landing extends Component {
           <div className="container">
             <div className="row">
               <div className="col-md-12 text-center">
-                <h1 className="display-3 mb-4">Welcome to Richmond Soccer!</h1>
+                <h1 className="display-4 mb-4">Welcome to Richmond Virginia Soccer League!</h1>
                 <p className="lead">
                   {' '}
                   Hard work beats talent. When talent doesn’t work hard. - Tim Notke

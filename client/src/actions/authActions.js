@@ -5,6 +5,7 @@ import jwt_decode from 'jwt-decode';
 import { GET_ERRORS, SET_CURRENT_USER } from './types';
 
 // Register User
+// this axios call is accessing backend api for us
 export const registerUser = (userData, history) => dispatch => {
   axios
     .post('/api/users/register', userData)

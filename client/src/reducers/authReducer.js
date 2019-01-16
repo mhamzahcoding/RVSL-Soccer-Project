@@ -7,6 +7,7 @@ const initialState = {
   user: {}
 };
 
+// manipulated the state to include new user
 export default function(state = initialState, action) {
   switch (action.type) {
     case SET_CURRENT_USER:
