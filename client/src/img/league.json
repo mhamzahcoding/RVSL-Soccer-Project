@@ -1,0 +1,63 @@
+{"league" : [
+    {
+            "id": "0",
+            "name": "JAX",
+            "position": "1"
+        },
+        {
+            "id": "1",
+            "name": "JAX",
+            "position": "2"
+        },
+        {
+            "id": "2",
+            "name": "Tigers",
+            "position": "3"   
+        },
+        { 
+            "id":"3",
+            "name": "Benders",
+            "position": "4"
+        },
+        {
+            "id": "4",
+            "name": "Kickers",
+            "position": "4"
+            },
+        {
+            "id": "5",
+            "name": "Strikers",   
+            "position": "5"
+        },
+        { 
+            "id":"6",
+            "name": "Arsenal",
+            "position": "6"
+        },
+        {
+            "id": "7",
+            "name": "River City",
+            "position": "7"   
+        },
+        { 
+            "id":"8",
+            "name": "RVA FC",
+            "position":"8"
+        },
+        {
+            "id": "9",
+            "name": "LOL",
+            "position":"9"
+            },
+        {
+            "id": "10",
+            "name": "Runn!",
+            "position":"10"   
+        },
+        { 
+            "id":"11",
+            "name": "Benders",
+            "position": "11"
+        }
+    ]
+}
