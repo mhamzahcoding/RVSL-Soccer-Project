@@ -5,7 +5,7 @@ const passport = require('passport');
 
 // Load Validation
 const validateProfileInput = require('../../validation/profile');
-const validateExperienceInput = require('../../validation/experience');
+const validateFreeagentInput = require('../../validation/free-agent');
 // const validateEducationInput = require('../../validation/education');
 
 // Load Profile Model
@@ -166,14 +166,14 @@ router.get(
     }
   );
   
-  // @route   POST api/profile/experience
-  // @desc    Add experience to profile
+  // @route   POST api/profile/free-agent
+  // @desc    Add free agent info to profile
   // @access  Private
   router.post(
-    '/experience',
+    '/free-agent',
     passport.authenticate('jwt', { session: false }),
     (req, res) => {
-      const { errors, isValid } = validateExperienceInput(req.body);
+      const { errors, isValid } = validateFreeagentInput(req.body);
   
       // Check Validation
       if (!isValid) {
@@ -193,7 +193,7 @@ router.get(
         };
   
         // Add to exp array
-        profile.experience.unshift(newExp);
+        profile.freeagent.unshift(newExp);
   
         profile.save().then(profile => res.json(profile));
       });
@@ -234,22 +234,22 @@ router.get(
     }
   );
   
-  // @route   DELETE api/profile/experience/:exp_id
-  // @desc    Delete experience from profile
+  // @route   DELETE api/profile/freeagent/:exp_id
+  // @desc    Delete Free Agent info from profile
   // @access  Private
   router.delete(
-    '/experience/:exp_id',
+    '/free-agent/:exp_id',
     passport.authenticate('jwt', { session: false }),
     (req, res) => {
       Profile.findOne({ user: req.user.id })
         .then(profile => {
           // Get remove index
-          const removeIndex = profile.experience
+          const removeIndex = profile.freeagent
             .map(item => item.id)
             .indexOf(req.params.exp_id);
   
           // Splice out of array
-          profile.experience.splice(removeIndex, 1);
+          profile.freeagent.splice(removeIndex, 1);
   
           // Save
           profile.save().then(profile => res.json(profile));

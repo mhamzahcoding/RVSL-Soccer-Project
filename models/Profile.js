@@ -35,30 +35,12 @@ const ProfileSchema = new Schema({
   // githubusername: {
   //   type: String
   // },
-  experience:
+  freeagent:
     {
-      // title: {
-      //   type: String,
-      //   required: true
-      // },
-      // company: {
-      //   type: String,
-      //   required: true
-      // },
-      // location: {
-      //   type: String
-      // },
-      // from: {
-      //   type: Date,
-      //   required: true
-      // },
-      // to: {
-      //   type: Date
-      // },
-      // current: {
-      //   type: Boolean,
-      //   default: false
-      // },
+      skills: {
+        type: [String],
+        required: true
+      },
       description: {
         type: String
       }

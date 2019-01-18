@@ -18,6 +18,7 @@ import Login from './components/auth/Login';
 import Dashboard from './components/dashboard/Dashboard';
 import CreateProfile from './components/create-profile/CreateProfile';
 import EditProfile from './components/edit-profile/EditProfile';
+import AddFreeAgent from './components/add-credentials/free-agent';
 
 import './App.css';
 
@@ -68,6 +69,13 @@ class App extends Component {
                   exact
                   path="/edit-profile"
                   component={EditProfile}
+                />
+              </Switch>
+              <Switch>
+                <PrivateRoute
+                  exact
+                  path="/add-freeagent"
+                  component={AddFreeAgent}
                 />
               </Switch>
             </div>

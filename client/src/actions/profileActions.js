@@ -73,3 +73,16 @@ export const clearCurrentProfile = () => {
     type: CLEAR_CURRENT_PROFILE
   };
 };
+
+// Add Free Agent
+export const AddFreeAgent = (expData, history) => dispatch => {
+  axios
+    .post('/api/profile/add-freeagent', expData)
+    .then(res => history.push('/dashboard'))
+    .catch(err =>
+      dispatch({
+        type: GET_ERRORS,
+        payload: err.response.data
+      })
+    );
+};
