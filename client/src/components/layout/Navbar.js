@@ -54,7 +54,7 @@ class Navbar extends Component {
       <nav className="navbar navbar-expand-sm navbar-dark bg-info mb-4">
         <div className="container">
           <Link className="navbar-brand" to="/">
-            RVSL
+          <i class="fas fa-futbol"> RVSL</i>
           </Link>
           <button
             className="navbar-toggler"
@@ -71,6 +71,12 @@ class Navbar extends Component {
                 <Link className="nav-link" to="/profiles">
                   {' '}
                   Free Agents
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/profiles">
+                  
+                  Teams
                 </Link>
               </li>
             </ul>
