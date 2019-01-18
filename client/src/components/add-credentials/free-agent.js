@@ -84,11 +84,11 @@ class FreeAgent extends Component {
                   error={errors.description}
                   info="Tell us more about your soccer skills"
                 />
-                <input
+                <Link to="/freeAgent"><input
                   type="submit"
                   value="Submit"
                   className="btn btn-info btn-block mt-4"
-                />
+                /></Link>
               </form>
             </div>
           </div>

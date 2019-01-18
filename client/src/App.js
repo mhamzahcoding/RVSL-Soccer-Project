@@ -19,7 +19,6 @@ import Dashboard from './components/dashboard/Dashboard';
 import CreateProfile from './components/create-profile/CreateProfile';
 import EditProfile from './components/edit-profile/EditProfile';
 import AddFreeAgent from './components/add-credentials/free-agent';
-
 import './App.css';
 
 // Check for token
