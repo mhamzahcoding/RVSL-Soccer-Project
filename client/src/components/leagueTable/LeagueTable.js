@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import ReactTable from 'react-table'
 import 'react-table/react-table.css'
 import { Jumbotron } from 'react-bootstrap'
+//import { Card } from 'react-bootstrap'
 ///import {Container}  from 'react-bootstrap'
 //import axios from 'axios';
 //import classnames from 'classnames';
@@ -22,13 +23,13 @@ class LeagueTable extends Component {
     }).then(res => res.json())          // convert to plain text
     .then(posts => {
         console.log(posts) 
-        this.setState({posts: posts
+        this.setState({posts: posts     // set state
         },
         function(){
             console.log(this.state)
         })   
         })
-      // set state
+      
     }
 
 
@@ -58,16 +59,15 @@ class LeagueTable extends Component {
     
         ]
       return(
-          //<Container>
-              <Jumbotron>
+        <Jumbotron>
+             
                 <ReactTable
                     columns={columns}
                     data={this.state.posts}
                 >
-
                 </ReactTable>
-              </Jumbotron>
-         // </Container>
+
+        </Jumbotron>
       )
   }
 }

@@ -15,7 +15,7 @@ import Footer from './components/layout/Footer';
 import Landing from './components/layout/Landing';
 import Register from './components/auth/Register';
 import Login from './components/auth/Login';
-import LeagueTable from './components/layout/LeagueTable';
+import LeagueTable from './components/leagueTable/LeagueTable';
 import Dashboard from './components/dashboard/Dashboard';
 import CreateProfile from './components/create-profile/CreateProfile';
 
@@ -53,6 +53,7 @@ class App extends Component {
             <div className="container">
               <Route exact path="/register" component={Register} />
               <Route exact path="/login" component={Login} />
+              <Route exact path="/teams" component={LeagueTable} />
               <Switch>
                 <PrivateRoute exact path="/dashboard" component={Dashboard} />
               </Switch>
@@ -64,7 +65,6 @@ class App extends Component {
                 />
               </Switch>
             </div>
-            <LeagueTable/>
             <Footer />
           </div>
         </Router>

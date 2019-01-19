@@ -67,16 +67,16 @@ class Navbar extends Component {
 
           <div className="collapse navbar-collapse" id="mobile-nav">
             <ul className="navbar-nav mr-auto">
-              <li className="nav-item">
-                <Link className="nav-link" to="/profiles">
+            <li className="nav-item">
+                <Link className="nav-link" to="/teams">
                   {' '}
-                  Free Agents
+                  Teams
                 </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/profiles">
-                  
-                  Teams
+                  {' '}
+                  Free Agents
                 </Link>
               </li>
             </ul>
