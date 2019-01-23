@@ -9,7 +9,12 @@
     "server": "nodemon server.js",
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
+<<<<<<< HEAD
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+=======
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm run build"
+>>>>>>> be7966f46b9a5069a528497d1b7e0d16e9269a0d
   },
   "author": "Hamzah Hanif",
   "license": "",
