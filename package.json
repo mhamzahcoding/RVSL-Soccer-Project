@@ -1,7 +1,7 @@
 {
-  "name": "devconnector",
+  "name": "final-project",
   "version": "1.0.0",
-  "description": "Social network for developers",
+  "description": "",
   "main": "server.js",
   "scripts": {
     "client-install": "npm install --prefix client",
@@ -9,16 +9,15 @@
     "server": "nodemon server.js",
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild":
-      "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
-  "author": "Brad Traversy",
-  "license": "MIT",
+  "author": "Hamzah Hanif",
+  "license": "",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.2",
     "concurrently": "^3.5.1",
-    "express": "^4.16.3",
+    "express": "^4.16.4",
     "gravatar": "^1.6.0",
     "jsonwebtoken": "^8.2.0",
     "mongoose": "^5.0.12",

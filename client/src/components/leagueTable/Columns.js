@@ -3,7 +3,7 @@ import {BootstrapTable, TableHeaderColumn} from 'react-bootstrap-table';
 import '../../../node_modules/react-bootstrap-table/dist/react-bootstrap-table-all.min.css';
 import league from '../../img/league';
 import './rows.css';
-import {Link} from 'react-router-dom';
+// import {Link} from 'react-router-dom';
 
 
 function rowClassNameFormat(row, rowIdx) {
