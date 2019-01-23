@@ -15,6 +15,10 @@ const UserSchema = new Schema({
     type: String,
     required: true
   },
+  team: {
+    type: String,
+    required: false
+  },
   avatar: {
     type: String
   },

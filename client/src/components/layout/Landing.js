@@ -20,7 +20,7 @@ class Landing extends Component {
                 <h1 className="display-4 mb-4">Welcome to Richmond Virginia Soccer League!</h1>
                 <p className="lead">
                   {' '}
-                  Hard work beats talent. When talent doesn’t work hard. - Tim Notke
+                  Hard work beats talent. When talent doesn’t work hard. - Hamzah Hanif
                 </p>
                 <p className="font-weight-bolder">
                 WE BELIEVE IN YOU! Join us Now.
