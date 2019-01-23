@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { withRouter } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import TextFieldGroup from '../common/TextFieldGroup';
 import TextAreaFieldGroup from '../common/TextAreaFieldGroup';
 import InputGroup from '../common/InputGroup';
 import SelectListGroup from '../common/SelectListGroup';
 import { createProfile, getCurrentProfile } from '../../actions/profileActions';
-import isEmpty from '../../validation/is-empty'
+import isEmpty from '../../validation/is-empty';
 
 class CreateProfile extends Component {
   constructor(props) {
@@ -15,12 +15,8 @@ class CreateProfile extends Component {
     this.state = {
       displaySocialInputs: false,
       handle: '',
-      //company: '',
-      //website: '',
       location: '',
       status: '',
-      skills: '',
-      //githubusername: '',
       bio: '',
       twitter: '',
       facebook: '',
@@ -35,7 +31,7 @@ class CreateProfile extends Component {
   }
 
   componentDidMount() {
-      this.props.getCurrentProfile();
+    this.props.getCurrentProfile();
   }
 
   componentWillReceiveProps(nextProps) {
@@ -43,44 +39,40 @@ class CreateProfile extends Component {
       this.setState({ errors: nextProps.errors });
     }
 
-      if (nextProps.profile.profile) {
-        const profile = nextProps.profile.profile;
-  
-        // Bring skills array back to CSV
-        const skillsCSV = profile.skills.join(',');
-  
-        // If profile field doesnt exist, make empty string
-        profile.company = !isEmpty(profile.company) ? profile.company : '';
-        profile.location = !isEmpty(profile.location) ? profile.location : '';
-        profile.bio = !isEmpty(profile.bio) ? profile.bio : '';
-        profile.social = !isEmpty(profile.social) ? profile.social : {};
-        profile.twitter = !isEmpty(profile.social.twitter)
-          ? profile.social.twitter
-          : '';
-        profile.facebook = !isEmpty(profile.social.facebook)
-          ? profile.social.facebook
-          : '';
-        profile.linkedin = !isEmpty(profile.social.linkedin)
-          ? profile.social.linkedin
-          : '';
-        profile.youtube = !isEmpty(profile.social.youtube)
-          ? profile.social.youtube
-          : '';
-        profile.instagram = !isEmpty(profile.social.instagram)
-          ? profile.social.instagram
-          : '';
+    if (nextProps.profile.profile) {
+      const profile = nextProps.profile.profile;
 
-              // Set component fields state
+      // If profile field doesnt exist, make empty string
+      profile.location = !isEmpty(profile.location) ? profile.location : '';
+      profile.bio = !isEmpty(profile.bio) ? profile.bio : '';
+      profile.social = !isEmpty(profile.social) ? profile.social : {};
+      profile.twitter = !isEmpty(profile.social.twitter)
+        ? profile.social.twitter
+        : '';
+      profile.facebook = !isEmpty(profile.social.facebook)
+        ? profile.social.facebook
+        : '';
+      profile.linkedin = !isEmpty(profile.social.linkedin)
+        ? profile.social.linkedin
+        : '';
+      profile.youtube = !isEmpty(profile.social.youtube)
+        ? profile.social.youtube
+        : '';
+      profile.instagram = !isEmpty(profile.social.instagram)
+        ? profile.social.instagram
+        : '';
+
+      // Set component fields state
       this.setState({
         handle: profile.handle,
         location: profile.location,
         status: profile.status,
-        skills: skillsCSV,
         bio: profile.bio,
         twitter: profile.twitter,
         facebook: profile.facebook,
         linkedin: profile.linkedin,
-        youtube: profile.youtube
+        youtube: profile.youtube,
+        instagram: profile.instagram
       });
     }
   }
@@ -90,12 +82,8 @@ class CreateProfile extends Component {
 
     const profileData = {
       handle: this.state.handle,
-      //company: this.state.company,
-      //website: this.state.website,
       location: this.state.location,
       status: this.state.status,
-      skills: this.state.skills,
-      //githubusername: this.state.githubusername,
       bio: this.state.bio,
       twitter: this.state.twitter,
       facebook: this.state.facebook,
@@ -167,19 +155,19 @@ class CreateProfile extends Component {
       );
     }
 
-    // Select options for skills
+    // Select options for status
     const options = [
       {label: '* Select your Soccer Skills', value: 0},
-      {label: 'GoalKeeper', value: 'Defense'},
-      {label: 'Right Fullback', value: 'Defense'},
-      {label: 'Left Fullback', value: 'Defense'},
-      {label: 'Center Back', value: 'Defense'},
-      {label: 'Sweeper', value: 'Defense'},
-      {label: 'Defending/Holding', value: 'Midfielder'},
-      {label: 'Central/Box-to-Box', value: 'Midfielder'},
-      {label: 'Right Midfielder', value: 'Wingers'},
-      {label: 'Left Midfielder', value: 'Wingers'},
-      {label: 'Striker', value: 'Offense'},
+      {label: 'GoalKeeper', value: 'GoalKeeper'},
+      {label: 'Right Fullback', value: 'Right Fullback'},
+      {label: 'Left Fullback', value: 'Left Fullback'},
+      {label: 'Center Back', value: 'Center Back'},
+      {label: 'Sweeper', value: 'Sweeper'},
+      {label: 'Defending/Holding', value: 'Defending/Holding'},
+      {label: 'Central/Box-to-Box', value: 'Central/Box-to-Box'},
+      {label: 'Right Midfielder', value: 'Right Midfielder'},
+      {label: 'Left Midfielder', value: 'Left Midfielder'},
+      {label: 'Striker', value: 'Striker'},
       {label: 'Other', value: 'Other'}
     ];
 
@@ -188,67 +176,37 @@ class CreateProfile extends Component {
         <div className="container">
           <div className="row">
             <div className="col-md-8 m-auto">
-              <h1 className="display-4 text-center">Edit Your Profile</h1>
-
+              <Link to="/dashboard" className="btn btn-light">
+                Go Back
+              </Link>
+              <h1 className="display-4 text-center">Edit Profile</h1>
               <small className="d-block pb-3">* = required fields</small>
               <form onSubmit={this.onSubmit}>
                 <TextFieldGroup
-                  placeholder="* Profile Name"
+                  placeholder="* Profile Handle"
                   name="handle"
                   value={this.state.handle}
                   onChange={this.onChange}
                   error={errors.handle}
-                  info="A unique handle for your profile URL. Your full name"
+                  info="A unique handle for your profile URL. Your full name."
                 />
                 <SelectListGroup
-                  placeholder="Skills"
-                  name="skills"
-                  value={this.state.skills}
+                  placeholder="Status"
+                  name="status"
+                  value={this.state.status}
                   onChange={this.onChange}
                   options={options}
-                  error={errors.skills}
+                  error={errors.status}
                   info="Give us an idea of where you are at in your career"
                 />
-                {/* <TextFieldGroup
-                  placeholder="Company"
-                  name="company"
-                  value={this.state.company}
-                  onChange={this.onChange}
-                  error={errors.company}
-                  info="Could be your own company or one you work for"
-                /> */}
-                {/* <TextFieldGroup
-                  placeholder="Website"
-                  name="website"
-                  value={this.state.website}
-                  onChange={this.onChange}
-                  error={errors.website}
-                  info="Could be your own website or a company one"
-                /> */}
                 <TextFieldGroup
                   placeholder="Location"
                   name="location"
                   value={this.state.location}
                   onChange={this.onChange}
                   error={errors.location}
-                  info="City or city & state suggested (eg. Richmond, VA)"
+                  info="City or city & state suggested (eg. Boston, MA)"
                 />
-                <TextFieldGroup
-                  placeholder="Status"
-                  name="status"
-                  value={this.state.status}
-                  onChange={this.onChange}
-                  error={errors.status}
-                  info="Please state your team name if you have one"
-                />
-                {/* <TextFieldGroup
-                  placeholder="Github Username"
-                  name="githubusername"
-                  value={this.state.githubusername}
-                  onChange={this.onChange}
-                  error={errors.githubusername}
-                  info="If you want your latest repos and a Github link, include your username"
-                /> */}
                 <TextAreaFieldGroup
                   placeholder="Short Bio"
                   name="bio"
@@ -292,7 +250,6 @@ CreateProfile.propTypes = {
   getCurrentProfile: PropTypes.func.isRequired,
   profile: PropTypes.object.isRequired,
   errors: PropTypes.object.isRequired
-
 };
 
 const mapStateToProps = state => ({

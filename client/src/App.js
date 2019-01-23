@@ -18,7 +18,13 @@ import Login from './components/auth/Login';
 import Dashboard from './components/dashboard/Dashboard';
 import CreateProfile from './components/create-profile/CreateProfile';
 import EditProfile from './components/edit-profile/EditProfile';
-import AddFreeAgent from './components/add-credentials/free-agent';
+import AddExperience from './components/add-credentials/AddExperience';
+import Profiles from './components/profiles/Profiles';
+import Profile from './components/profile/Profile';
+import Posts from './components/posts/Posts';
+import Post from './components/post/Post';
+import NotFound from './components/not-found/NotFound';
+
 import './App.css';
 
 // Check for token
@@ -53,6 +59,8 @@ class App extends Component {
             <div className="container">
               <Route exact path="/register" component={Register} />
               <Route exact path="/login" component={Login} />
+              <Route exact path="/profiles" component={Profiles} />
+              <Route exact path="/profile/:handle" component={Profile} />
               <Switch>
                 <PrivateRoute exact path="/dashboard" component={Dashboard} />
               </Switch>
@@ -73,10 +81,17 @@ class App extends Component {
               <Switch>
                 <PrivateRoute
                   exact
-                  path="/add-freeagent"
-                  component={AddFreeAgent}
+                  path="/add-experience"
+                  component={AddExperience}
                 />
               </Switch>
+              <Switch>
+                <PrivateRoute exact path="/feed" component={Posts} />
+              </Switch>
+              <Switch>
+                <PrivateRoute exact path="/post/:id" component={Post} />
+              </Switch>
+              <Route exact path="/not-found" component={NotFound} />
             </div>
             <Footer />
           </div>

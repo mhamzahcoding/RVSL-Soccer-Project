@@ -38,6 +38,6 @@ img {
   color: #bbb !important;
 }
 
-html, body{
-  height: 100%
+.footer-link {
+  font-weight: bold;
 }

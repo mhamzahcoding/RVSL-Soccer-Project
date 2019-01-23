@@ -4,7 +4,6 @@ import { PropTypes } from 'prop-types';
 import { connect } from 'react-redux';
 
 class Landing extends Component {
-
   componentDidMount() {
     if (this.props.auth.isAuthenticated) {
       this.props.history.push('/dashboard');
@@ -23,7 +22,7 @@ class Landing extends Component {
                   {' '}
                   Hard work beats talent. When talent doesn’t work hard. - Tim Notke
                 </p>
-                <p class="font-weight-bolder">
+                <p className="font-weight-bolder">
                 WE BELIEVE IN YOU! Join us Now.
                 </p>
                 <hr />

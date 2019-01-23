@@ -19,7 +19,7 @@ class Register extends Component {
     this.onChange = this.onChange.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
   }
-  // these props are imported from reducers/index.js and are used below with this.props method
+
   componentDidMount() {
     if (this.props.auth.isAuthenticated) {
       this.props.history.push('/dashboard');
@@ -46,7 +46,6 @@ class Register extends Component {
       password2: this.state.password2
     };
 
-    //this.props.history allows us to redirect to the history of users with this action
     this.props.registerUser(newUser, this.props.history);
   }
 
@@ -60,10 +59,10 @@ class Register extends Component {
             <div className="col-md-8 m-auto">
               <h1 className="display-4 text-center">Sign Up</h1>
               <p className="lead text-center">
-                Create your account
+                Create your RVSL account
               </p>
               <form noValidate onSubmit={this.onSubmit}>
-              <TextFieldGroup
+                <TextFieldGroup
                   placeholder="Name"
                   name="name"
                   value={this.state.name}
@@ -104,15 +103,13 @@ class Register extends Component {
     );
   }
 }
-//mapping proptypes function for register form
 
 Register.propTypes = {
   registerUser: PropTypes.func.isRequired,
   auth: PropTypes.object.isRequired,
   errors: PropTypes.object.isRequired
 };
-// this is just props coming from index.js in reducers folder
-//auth and errors are props
+
 const mapStateToProps = state => ({
   auth: state.auth,
   errors: state.errors
