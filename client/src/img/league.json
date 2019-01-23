@@ -2,62 +2,111 @@
     {
             "id": "0",
             "name": "JAX",
-            "position": "1"
+            "position": "1",
+            "wins": "0",
+            "ties": "JAX",
+            "losses": "1",
+            "points":""
+            
         },
         {
             "id": "1",
             "name": "JAX",
-            "position": "2"
+            "position": "2",
+            "wins": "0",
+            "ties": "JAX",
+            "losses": "1",
+            "points":""
         },
         {
             "id": "2",
             "name": "Tigers",
-            "position": "3"   
+            "position": "3",
+            "wins": "0",
+            "ties": "JAX",
+            "losses": "1",
+            "points":""   
         },
         { 
             "id":"3",
             "name": "Benders",
-            "position": "4"
+            "position": "4",
+            "wins": "0",
+            "ties": "JAX",
+            "losses": "1",
+            "points":""
         },
         {
             "id": "4",
             "name": "Kickers",
-            "position": "4"
+            "position": "5",
+            "wins": "0",
+            "ties": "JAX",
+            "losses": "1",
+            "points":""
             },
         {
             "id": "5",
             "name": "Strikers",   
-            "position": "5"
+            "position": "6",
+            "wins": "0",
+            "ties": "JAX",
+            "losses": "1",
+            "points":""
         },
         { 
             "id":"6",
             "name": "Arsenal",
-            "position": "6"
+            "position": "7",
+            "wins": "0",
+            "ties": "JAX",
+            "losses": "1",
+            "points":""
         },
         {
             "id": "7",
             "name": "River City",
-            "position": "7"   
+            "position": "8",
+            "wins": "0",
+            "ties": "JAX",
+            "losses": "1",
+            "points":""   
         },
         { 
             "id":"8",
             "name": "RVA FC",
-            "position":"8"
+            "position":"9",
+            "wins": "0",
+            "ties": "JAX",
+            "losses": "1",
+            "points":""
         },
         {
             "id": "9",
             "name": "LOL",
-            "position":"9"
+            "position":"10",
+            "wins": "0",
+            "ties": "JAX",
+            "losses": "1",
+            "points":""
             },
         {
             "id": "10",
             "name": "Runn!",
-            "position":"10"   
+            "position":"11",
+            "wins": "0",
+            "ties": "JAX",
+            "losses": "1",
+            "points":""   
         },
         { 
             "id":"11",
             "name": "Benders",
-            "position": "11"
+            "position": "12",
+            "wins": "0",
+            "ties": "JAX",
+            "losses": "1",
+            "points":""
         }
     ]
 }
