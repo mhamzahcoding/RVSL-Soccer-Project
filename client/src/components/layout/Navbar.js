@@ -3,11 +3,12 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { logoutUser } from '../../actions/authActions';
+import { clearCurrentProfile } from '../../actions/profileActions';
 
 class Navbar extends Component {
-  
   onLogoutClick(e) {
     e.preventDefault();
+    this.props.clearCurrentProfile();
     this.props.logoutUser();
   }
 
@@ -17,8 +18,18 @@ class Navbar extends Component {
     const authLinks = (
       <ul className="navbar-nav ml-auto">
         <li className="nav-item">
-          <Link
-            to=""
+          <Link className="nav-link" to="/feed">
+            Free Agent
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link className="nav-link" to="/dashboard">
+            Dashboard
+          </Link>
+        </li>
+        <li className="nav-item">
+          <a
+            href=""
             onClick={this.onLogoutClick.bind(this)}
             className="nav-link"
           >
@@ -30,7 +41,7 @@ class Navbar extends Component {
               title="You must have a Gravatar connected to your email to display an image"
             />{' '}
             Logout
-          </Link>
+          </a>
         </li>
       </ul>
     );
@@ -53,8 +64,8 @@ class Navbar extends Component {
     return (
       <nav className="navbar navbar-expand-sm navbar-dark bg-info mb-4">
         <div className="container">
-          <Link className="navbar-brand" to="/">
-          <i class="fas fa-futbol"> RVSL</i>
+        <Link className="navbar-brand" to="/">
+          <i className="fas fa-futbol"> RVSL</i>
           </Link>
           <button
             className="navbar-toggler"
@@ -76,7 +87,7 @@ class Navbar extends Component {
               <li className="nav-item">
                 <Link className="nav-link" to="/profiles">
                   {' '}
-                  Free Agents
+                  Teams
                 </Link>
               </li>
             </ul>
@@ -97,4 +108,6 @@ const mapStateToProps = state => ({
   auth: state.auth
 });
 
-export default connect(mapStateToProps, { logoutUser })(Navbar);
+export default connect(mapStateToProps, { logoutUser, clearCurrentProfile })(
+  Navbar
+);

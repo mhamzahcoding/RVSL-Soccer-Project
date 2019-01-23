@@ -31,11 +31,11 @@ class Table extends React.Component {
         condensed 
         trClassName= {rowClassNameFormat}
         >
-          <TableHeaderColumn dataField='id'isKey>id</TableHeaderColumn>
+          <TableHeaderColumn dataField='position'isKey>POS</TableHeaderColumn>
           <Link to="/profiles">
           <TableHeaderColumn dataField='name'> Team Name  </TableHeaderColumn>
           </Link>
-          <TableHeaderColumn dataField='position'>position</TableHeaderColumn>
+        
           <TableHeaderColumn dataField='wins'>Wins</TableHeaderColumn>
           <TableHeaderColumn dataField='ties'>Ties</TableHeaderColumn>
           <TableHeaderColumn dataField='losses'>Losses</TableHeaderColumn>

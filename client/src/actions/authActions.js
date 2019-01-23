@@ -5,7 +5,6 @@ import jwt_decode from 'jwt-decode';
 import { GET_ERRORS, SET_CURRENT_USER } from './types';
 
 // Register User
-// this axios call is accessing backend api for us
 export const registerUser = (userData, history) => dispatch => {
   axios
     .post('/api/users/register', userData)
@@ -28,10 +27,8 @@ export const loginUser = userData => dispatch => {
       // Set token to ls
       localStorage.setItem('jwtToken', token);
       // Set token to Auth header
-      // this token includes user information
       setAuthToken(token);
       // Decode token to get user data
-      // jwt_decode will extract the user info from the long bearer token
       const decoded = jwt_decode(token);
       // Set current user
       dispatch(setCurrentUser(decoded));

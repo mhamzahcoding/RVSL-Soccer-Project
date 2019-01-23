@@ -19,6 +19,18 @@ class LeagueTable extends Component {
             <ErrorBoundary>
             <Jumbotron>
                 <Table/>
+                <p>
+                    * win = 3 points
+                </p>
+                <p>
+                    * tie = 1 point
+                </p>
+                <p>
+                    * loss = 0 points
+                </p>
+                <p>
+                    (top 4 go to playoff)
+                </p>
             </Jumbotron>
         </ErrorBoundary>
         )
