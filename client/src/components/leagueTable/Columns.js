@@ -32,9 +32,9 @@ class Table extends React.Component {
         trClassName= {rowClassNameFormat}
         >
           <TableHeaderColumn dataField='position'isKey>POS</TableHeaderColumn>
-          <Link to="/profiles">
+          
           <TableHeaderColumn dataField='name'> Team Name  </TableHeaderColumn>
-          </Link>
+        
         
           <TableHeaderColumn dataField='wins'>Wins</TableHeaderColumn>
           <TableHeaderColumn dataField='ties'>Ties</TableHeaderColumn>
