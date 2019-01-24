@@ -21,7 +21,7 @@ class ProfileItem extends Component {
               )}
             </p>
             <Link to={`/profile/${profile.handle}`} className="btn btn-info">
-              View Roster
+              View Profile
             </Link>
           </div>
         </div>
