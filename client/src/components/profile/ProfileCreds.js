@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class ProfileCreds extends Component {
   render() {
@@ -9,7 +10,7 @@ class ProfileCreds extends Component {
         <p>
           {exp.team === '' ? null : (
             <span>
-              <strong>team: </strong> {exp.team}
+              <strong>Team: </strong> <Link to="/teams"> {exp.team} </Link>
             </span>
           )}
         </p>
@@ -17,14 +18,16 @@ class ProfileCreds extends Component {
     ));
     return (
       <div className="row">
-        <div className="col-md-6">
-          <h3 className="text-center text-info">Experience</h3>
+        <div className="col-md-12">
+        <div className="card card-body bg-light mb-3">
+          <h3 className="text-center text-info">Team</h3>
           {expItems.length > 0 ? (
             <ul className="list-group">{expItems}</ul>
           ) : (
-            <p className="text-center">No Experience Listed</p>
+            <p className="text-center">No Team Listed</p>
           )}
         </div>
+      </div>
       </div>
     );
   }
