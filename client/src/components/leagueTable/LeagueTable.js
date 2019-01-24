@@ -29,7 +29,7 @@ class LeagueTable extends Component {
                     * loss = 0 points
                 </p>
                 <p>
-                    (top 4 go to playoff)
+                    (Top 4 advance to playoffs)
                 </p>
             </Jumbotron>
         </ErrorBoundary>
