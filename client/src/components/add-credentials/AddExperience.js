@@ -78,16 +78,16 @@ class AddExperience extends Component {
     // Select options for status
     const options = [
       {label: '* Select your Team', value: 0},
-      {label: 'Team 1', value: 'Team 1'},
-      {label: 'Team 2', value: 'Team 2'},
-      {label: 'Team 3', value: 'Team 3'},
-      {label: 'Team 4', value: 'Team 4'},
-      {label: 'Team 5', value: 'Team 5'},
-      {label: 'Team 6', value: 'Team 6'},
-      {label: 'Team 7', value: 'Team 7'},
-      {label: 'Team 8', value: 'Team 8'},
-      {label: 'Team 9', value: 'Team 9'},
-      {label: 'Team 10', value: 'Team 10'}
+      {label: 'JAX', value: 'JAX'},
+      {label: 'Tigers', value: 'Tigers'},
+      {label: 'Benders', value: 'Benders'},
+      {label: 'Kickers', value: 'Kickers'},
+      {label: 'Strikers', value: 'Strikers'},
+      {label: 'Arsenal', value: 'Arsenal'},
+      {label: 'River City', value: 'River City'},
+      {label: 'RVA FC', value: 'RVA FC'},
+      {label: 'LOL', value: 'LOL'},
+      {label: 'Runn!', value: 'Runn!'},
     ];
 
 AddExperience.propTypes = {
