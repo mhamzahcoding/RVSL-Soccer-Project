@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class ProfileCreds extends Component {
   render() {
@@ -9,7 +10,7 @@ class ProfileCreds extends Component {
         <p>
           {exp.team === '' ? null : (
             <span>
-              <strong>Team: </strong> {exp.team}
+              <strong>Team: </strong> <Link to="/teams"> {exp.team} </Link>
             </span>
           )}
         </p>
