@@ -9,7 +9,7 @@ class ProfileCreds extends Component {
         <p>
           {exp.team === '' ? null : (
             <span>
-              <strong>team: </strong> {exp.team}
+              <strong>Team: </strong> {exp.team}
             </span>
           )}
         </p>
