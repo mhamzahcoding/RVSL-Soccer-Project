@@ -61,7 +61,6 @@ class App extends Component {
               <Route exact path="/register" component={Register} />
               <Route exact path="/login" component={Login} />
               <Route exact path="/teams" component={LeagueTable} />
-              <Route exact path="/profiles" component={Profiles} />
               <Route exact path="/profile/:handle" component={Profile} />
               <Switch>
                 <PrivateRoute exact path="/dashboard" component={Dashboard} />
@@ -94,6 +93,9 @@ class App extends Component {
                 <PrivateRoute exact path="/post/:id" component={Post} />
               </Switch>
               <Route exact path="/not-found" component={NotFound} />
+              <Switch>
+                <PrivateRoute exact path="/profiles" component={Profiles} />
+              </Switch>
             </div>
             <Footer />
           </div>
