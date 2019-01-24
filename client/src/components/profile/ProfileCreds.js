@@ -17,7 +17,8 @@ class ProfileCreds extends Component {
     ));
     return (
       <div className="row">
-        <div className="col-md-6">
+        <div className="col-md-12">
+        <div className="card card-body bg-light mb-3">
           <h3 className="text-center text-info">Team</h3>
           {expItems.length > 0 ? (
             <ul className="list-group">{expItems}</ul>
@@ -25,6 +26,7 @@ class ProfileCreds extends Component {
             <p className="text-center">No Team Listed</p>
           )}
         </div>
+      </div>
       </div>
     );
   }

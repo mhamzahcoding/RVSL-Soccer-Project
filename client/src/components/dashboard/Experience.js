@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import Moment from 'react-moment';
 import { deleteExperience } from '../../actions/profileActions';
+import { Link } from  'react-router-dom';
 
 class Experience extends Component {
   onDeleteClick(id) {
@@ -12,7 +13,7 @@ class Experience extends Component {
   render() {
     const experience = this.props.experience.map(exp => (
       <tr key={exp._id}>
-        <td>{exp.team}</td>
+        <td><Link to="/teams">{exp.team}</Link></td>
         <td>
           <Moment format="YYYY/MM/DD">{exp.from}</Moment> -
           {exp.to === null ? (
