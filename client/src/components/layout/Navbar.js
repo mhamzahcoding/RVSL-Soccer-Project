@@ -84,12 +84,6 @@ class Navbar extends Component {
                   Teams
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/profiles">
-                  {' '}
-                  Teams
-                </Link>
-              </li>
             </ul>
             {isAuthenticated ? authLinks : guestLinks}
           </div>
