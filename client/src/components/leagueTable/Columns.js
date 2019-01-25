@@ -15,14 +15,9 @@ function rowClassNameFormat(row, rowIdx) {
   }
 
 class Table extends React.Component {
-    
-    
-
-
     render() {
         console.log(league.league)
         const teams = league.league
-          
 
       return (
         <BootstrapTable 
@@ -35,11 +30,14 @@ class Table extends React.Component {
           
           <TableHeaderColumn dataField='name'> Team Name  </TableHeaderColumn>
         
-        
           <TableHeaderColumn dataField='wins'>Wins</TableHeaderColumn>
+
           <TableHeaderColumn dataField='ties'>Ties</TableHeaderColumn>
+
           <TableHeaderColumn dataField='losses'>Losses</TableHeaderColumn>
+
           <TableHeaderColumn dataField='points'>points</TableHeaderColumn>
+          
         </BootstrapTable>
       );
     }
