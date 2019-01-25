@@ -25,6 +25,7 @@ import Profile from './components/profile/Profile';
 import Posts from './components/posts/Posts';
 import Post from './components/post/Post';
 import NotFound from './components/not-found/NotFound';
+import RosterTable from './components/rosterTable/RosterTable';
 
 import './App.css';
 
