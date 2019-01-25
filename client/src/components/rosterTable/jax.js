@@ -13,11 +13,11 @@ function rowClassNameFormat(row, rowIdx) {
   class Roster extends React.Component {
     render() {
         console.log(jax.jax)
-        const teams = jax.jax
+        const rosters = jax.jax
 
       return (
         <BootstrapTable 
-        data={ teams } 
+        data={ rosters } 
         hover
         condensed 
         trClassName= {rowClassNameFormat}
