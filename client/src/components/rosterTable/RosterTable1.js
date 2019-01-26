@@ -2,12 +2,12 @@ import React, { Component } from 'react'
 //import ReactTable from 'react-table'
 import 'react-table/react-table.css'
 import { Jumbotron } from 'react-bootstrap'
-import Roster from './jax';
+import Roster from './tigers';
 import '../../../node_modules/react-bootstrap-table/dist/react-bootstrap-table-all.min.css';
 import ErrorBoundary from '../../components/errorboundaries';
 
 
-class RosterTable extends Component {
+class RosterTable1 extends Component {
     render() {  
 
       return (
@@ -15,7 +15,7 @@ class RosterTable extends Component {
           <Jumbotron>
             <div>
                 <p style={{ fontWeight: "bold", textAlign: "center"}}>
-                    JAX Roster
+                    Tigers Roster
                 </p>
             </div>
               <Roster/>
@@ -25,4 +25,4 @@ class RosterTable extends Component {
   }
 }
 
-export default RosterTable;
+export default RosterTable1;

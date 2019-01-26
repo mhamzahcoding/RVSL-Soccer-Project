@@ -1,0 +1,75 @@
+{"tigers" : [
+    {
+        "id": "0",
+        "name": "Yousuf Malik",
+        "skills": "Goal Keeper",
+        "position": "1"
+    },
+    {
+        "id": "1",
+        "name": "Sean Pritchard",
+        "skills": "Defender",
+        "position": "15"
+    },
+    {
+        "id": "2",
+        "name": "Mike Wood",
+        "skills": "Defender",
+        "position": "7"
+    },
+    {
+        "id": "3",
+        "name": "Jose Maldonado",
+        "skills": "Defender",
+        "position": "6"
+    },
+    {
+        "id": "4",
+        "name": "Kyle Hasek",
+        "skills": "Defender",
+        "position": "4"
+    },
+    {
+        "id": "5",
+        "name": "Scott Collins",
+        "skills": "Midfielder",
+        "position": "3"
+    },
+    {
+        "id": "6",
+        "name": "Alex Kantlis",
+        "skills": "Midfielder",
+        "position": "14"
+    },
+    
+    {
+        "id": "7",
+        "name": "Roberto Murillor",
+        "skills": "Midfielder",
+        "position": "8"
+    },
+    {
+        "id": "8",
+        "name": "Cutter Jacobson",
+        "skills": "Midfielder",
+        "position": "12"
+    },
+    {
+        "id": "9",
+        "name": "Jeremy Frantz",
+        "skills": "Midfielder",
+        "position": "13"
+    },
+    {
+        "id": "10",
+        "name": "Hunter Kobrinetz",
+        "skills": "Striker",
+        "position": "9"
+    },
+    {
+        "id": "11",
+        "name": "Nico Almenara",
+        "skills": "Striker",
+        "position": "2"
+    }
+ ]}

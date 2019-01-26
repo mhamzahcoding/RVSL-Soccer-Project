@@ -26,7 +26,7 @@ import Posts from './components/posts/Posts';
 import Post from './components/post/Post';
 import NotFound from './components/not-found/NotFound';
 import RosterTable from './components/rosterTable/RosterTable';
-
+import TigersRoster from './components/rosterTable/RosterTable1';
 import './App.css';
 
 // Check for token
@@ -62,7 +62,6 @@ class App extends Component {
               <Route exact path="/register" component={Register} />
               <Route exact path="/login" component={Login} />
               <Route exact path="/teams" component={LeagueTable} />
-              <Route exact path="/roster" component={RosterTable} />
               <Route exact path="/profile/:handle" component={Profile} />
               <Switch>
                 <PrivateRoute exact path="/dashboard" component={Dashboard} />
@@ -98,6 +97,21 @@ class App extends Component {
               <Switch>
                 <PrivateRoute exact path="/profiles" component={Profiles} />
               </Switch>
+              <Switch>
+                <PrivateRoute
+                  exact
+                  path="/jax"
+                  component={RosterTable}
+                />
+              </Switch>
+              <Switch>
+                <PrivateRoute
+                  exact
+                  path="/tigers"
+                  component={TigersRoster}
+                />
+              </Switch>
+
             </div>
             <Footer />
           </div>

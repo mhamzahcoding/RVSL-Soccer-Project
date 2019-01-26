@@ -84,12 +84,6 @@ class Navbar extends Component {
                   Teams
                 </Link>
               </li>
-              <li>
-              <Link className="nav-link" to="/roster">
-                  {' '}
-                  Roster
-                </Link>
-              </li>
             </ul>
             {isAuthenticated ? authLinks : guestLinks}
           </div>
