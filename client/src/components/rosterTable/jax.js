@@ -4,11 +4,11 @@ import '../../../node_modules/react-bootstrap-table/dist/react-bootstrap-table-a
 import './rows.css';
 import jax from '../../img/jax.json';
 
-function rowClassNameFormat(row, rowIdx) {
-    // row is whole row object
-    // rowIdx is index of row
-    return rowIdx  < 4 ? 'td-column-function-even-example' : 'td-column-function-odd-example';
-  }
+// function rowClassNameFormat(row, rowIdx) {
+//     // row is whole row object
+//     // rowIdx is index of row
+//     return rowIdx  < 4 ? 'td-column-function-even-example' : 'td-column-function-odd-example';
+//   }
 
   class Roster extends React.Component {
     render() {
