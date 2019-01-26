@@ -22,8 +22,8 @@ import jax from '../../img/jax.json';
         // trClassName= {rowClassNameFormat}
         >
 
-        <TableHeaderColumn dataField='name'isKey>Player Name</TableHeaderColumn>
-        <TableHeaderColumn dataField='skills'isKey>Position</TableHeaderColumn>
+        <TableHeaderColumn dataField='name'>Player Name</TableHeaderColumn>
+        <TableHeaderColumn dataField='skills'>Position</TableHeaderColumn>
 
         </BootstrapTable>
       );
