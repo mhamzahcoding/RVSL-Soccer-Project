@@ -1,9 +1,11 @@
 {"jax" : [
     {
+        "id": "0",
         "name": "Hamzah",
         "skills": "Goal Keeper"
     },
     {
+        "id": "1",
         "name": "Nico",
         "skills": "Striker"
     }
