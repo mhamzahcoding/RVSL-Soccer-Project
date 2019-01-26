@@ -10,7 +10,7 @@ class ProfileCreds extends Component {
         <p>
           {exp.team === '' ? null : (
             <span>
-              <strong>Team: </strong> <Link to="/teams"> {exp.team} </Link>
+              <strong>Team: </strong> <Link to="/jax"> {exp.team} </Link>
             </span>
           )}
         </p>

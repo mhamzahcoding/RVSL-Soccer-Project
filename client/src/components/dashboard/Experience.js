@@ -13,7 +13,7 @@ class Experience extends Component {
   render() {
     const experience = this.props.experience.map(exp => (
       <tr key={exp._id}>
-        <td><Link to="/teams">{exp.team}</Link></td>
+        <td><Link to="/jax">{exp.team}</Link></td>
         <td>
           <Moment format="YYYY/MM/DD">{exp.from}</Moment> -
           {exp.to === null ? (
