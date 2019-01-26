@@ -19,7 +19,7 @@ import jax from '../../img/jax.json';
         data={ rosters } 
         hover
         condensed 
-        trClassName= {rowClassNameFormat}
+        // trClassName= {rowClassNameFormat}
         >
 
         <TableHeaderColumn dataField='name'isKey>Player Name</TableHeaderColumn>
