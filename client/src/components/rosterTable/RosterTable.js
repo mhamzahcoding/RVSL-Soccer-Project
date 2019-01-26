@@ -13,6 +13,11 @@ class RosterTable extends Component {
       return (
           <ErrorBoundary>
           <Jumbotron>
+            <div>
+                <p style={{ fontWeight: "bold"}}>
+                    Team Roster
+                </p>
+            </div>
               <Roster/>
           </Jumbotron>
       </ErrorBoundary>
