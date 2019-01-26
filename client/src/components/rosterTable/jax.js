@@ -22,7 +22,7 @@ import jax from '../../img/jax';
         // trClassName= {rowClassNameFormat}
         >
 
-        <TableHeaderColumn dataField='name'>Player Name</TableHeaderColumn>
+        <TableHeaderColumn dataField='name'isKey>Player Name</TableHeaderColumn>
         <TableHeaderColumn dataField='skills'>Position</TableHeaderColumn>
 
         </BootstrapTable>
