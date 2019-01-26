@@ -2,11 +2,13 @@
     {
         "id": "0",
         "name": "Hamzah",
-        "skills": "Goal Keeper"
+        "skills": "Goal Keeper",
+        "position": "1"
     },
     {
-        "id": "1",
+        "id": 1,
         "name": "Nico",
-        "skills": "Striker"
+        "skills": "Striker",
+        "position": "2"
     }
 ]}
