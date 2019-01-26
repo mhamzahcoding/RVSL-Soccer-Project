@@ -1,7 +1,6 @@
 import React from 'react'
 import {BootstrapTable, TableHeaderColumn} from 'react-bootstrap-table';
 import '../../../node_modules/react-bootstrap-table/dist/react-bootstrap-table-all.min.css';
-import './rows.css';
 import jax from '../../img/jax.json';
 
 // function rowClassNameFormat(row, rowIdx) {
