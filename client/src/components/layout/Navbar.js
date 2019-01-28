@@ -81,7 +81,13 @@ class Navbar extends Component {
             <li className="nav-item">
                 <Link className="nav-link" to="/teams">
                   {' '}
-                  Teams
+                  Points Table
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/fixture">
+                  {' '}
+                  Fixtures
                 </Link>
               </li>
             </ul>
