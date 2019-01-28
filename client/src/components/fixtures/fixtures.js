@@ -22,11 +22,11 @@ import './fixtures.css';
         condensed 
         // trClassName= {rowClassNameFormat}
         >
-        <TableHeaderColumn dataField='game'isKey className="bg-info" columnClassName='td-header-string-example'>Game No.</TableHeaderColumn>
-        <TableHeaderColumn dataField='date'columnClassName='td-column-string-example, td-header-string-example'>Date</TableHeaderColumn>
-        <TableHeaderColumn dataField='away'columnClassName='td-column-string-example, td-header-string-example'>Away Team</TableHeaderColumn>
-        <TableHeaderColumn dataField='home'columnClassName='td-column-string-example, td-header-string-example'>Home Team</TableHeaderColumn>
-        <TableHeaderColumn dataField='location' columnClassName='td-column-string-example, td-header-string-example'>Location</TableHeaderColumn>
+        <TableHeaderColumn dataField='game'isKey className="bg-info" columnClassName='td-column-string-example'>Game No.</TableHeaderColumn>
+        <TableHeaderColumn dataField='date' className="td-header-string-example" columnClassName='td-column-string-example'>Date</TableHeaderColumn>
+        <TableHeaderColumn dataField='away' className="td-header-string-example" columnClassName='td-column-string-example'>Away Team</TableHeaderColumn>
+        <TableHeaderColumn dataField='home' className="td-header-string-example" columnClassName='td-column-string-example'>Home Team</TableHeaderColumn>
+        <TableHeaderColumn dataField='location' className="td-header-string-example" columnClassName='td-column-string-example'>Location</TableHeaderColumn>
 
         </BootstrapTable>
       );
