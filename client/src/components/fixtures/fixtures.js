@@ -2,6 +2,7 @@ import React from 'react'
 import {BootstrapTable, TableHeaderColumn} from 'react-bootstrap-table';
 import '../../../node_modules/react-bootstrap-table/dist/react-bootstrap-table-all.min.css';
 import fixture from '../../img/fixtures';
+import './fixtures.css';
 
 // function rowClassNameFormat(row, rowIdx) {
 //     // row is whole row object
