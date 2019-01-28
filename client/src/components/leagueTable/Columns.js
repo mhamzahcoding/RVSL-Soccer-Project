@@ -26,17 +26,17 @@ class Table extends React.Component {
         condensed 
         trClassName= {rowClassNameFormat}
         >
-          <TableHeaderColumn dataField='position'isKey>POS</TableHeaderColumn>
+          <TableHeaderColumn dataField='position'isKey className="bg-info">POS</TableHeaderColumn>
           
-          <TableHeaderColumn dataField='name'> Team Name  </TableHeaderColumn>
+          <TableHeaderColumn dataField='name' className="bg-info"> Team Name  </TableHeaderColumn>
         
-          <TableHeaderColumn dataField='wins'>Wins</TableHeaderColumn>
+          <TableHeaderColumn dataField='wins' className="bg-info">Wins</TableHeaderColumn>
 
-          <TableHeaderColumn dataField='ties'>Ties</TableHeaderColumn>
+          <TableHeaderColumn dataField='ties' className="bg-info">Ties</TableHeaderColumn>
 
-          <TableHeaderColumn dataField='losses'>Losses</TableHeaderColumn>
+          <TableHeaderColumn dataField='losses' className="bg-info">Losses</TableHeaderColumn>
 
-          <TableHeaderColumn dataField='points'>points</TableHeaderColumn>
+          <TableHeaderColumn dataField='points' className="bg-info">points</TableHeaderColumn>
           
         </BootstrapTable>
       );
