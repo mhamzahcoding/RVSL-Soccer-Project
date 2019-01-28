@@ -1,6 +1,7 @@
 {"jax" : [
     {
         "id": "0",
+        "game":"1",
         "date": "02-02-2019",
         "away": "JAX",
         "home": "RVA FC",
@@ -8,6 +9,7 @@
     },
     {
         "id": "1",
+        "game":"2",
         "date": "02-03-2019",
         "away": "Runn!",
         "home": "Strikers",

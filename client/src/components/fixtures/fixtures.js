@@ -21,7 +21,8 @@ import fixture from '../../img/fixtures';
         condensed 
         // trClassName= {rowClassNameFormat}
         >
-        <TableHeaderColumn dataField='date'isKey>Date</TableHeaderColumn>
+        <TableHeaderColumn dataField='game'isKey>Game No.1</TableHeaderColumn>
+        <TableHeaderColumn dataField='date'>Date</TableHeaderColumn>
         <TableHeaderColumn dataField='away'>Away Team</TableHeaderColumn>
         <TableHeaderColumn dataField='home'>Home Team</TableHeaderColumn>
         <TableHeaderColumn dataField='location'>Location</TableHeaderColumn>
