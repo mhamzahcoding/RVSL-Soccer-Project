@@ -27,6 +27,7 @@ import Post from './components/post/Post';
 import NotFound from './components/not-found/NotFound';
 import RosterTable from './components/rosterTable/RosterTable';
 import TigersRoster from './components/rosterTable/RosterTable1';
+import FixtureTable from './components/fixtures/FixturesTable'
 import './App.css';
 
 // Check for token
@@ -111,7 +112,7 @@ class App extends Component {
                   component={TigersRoster}
                 />
               </Switch>
-
+              <Route exact path="/fixture" component={FixtureTable}/>
             </div>
             <Footer />
           </div>
