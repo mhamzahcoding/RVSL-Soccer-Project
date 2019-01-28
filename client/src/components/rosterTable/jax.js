@@ -21,9 +21,9 @@ import jax from '../../img/jax';
         condensed 
         // trClassName= {rowClassNameFormat}
         >
-        <TableHeaderColumn dataField='position'isKey>Jersey No.</TableHeaderColumn>
-        <TableHeaderColumn dataField='name'>Player Name</TableHeaderColumn>
-        <TableHeaderColumn dataField='skills'>Position</TableHeaderColumn>
+        <TableHeaderColumn dataField='position'isKey className="bg-info" columnClassName='td-column-string-example'>Jersey No.</TableHeaderColumn>
+        <TableHeaderColumn dataField='name' className="bg-info" columnClassName='td-column-string-example'>Player Name</TableHeaderColumn>
+        <TableHeaderColumn dataField='skills' className="bg-info" columnClassName='td-column-string-example'>Position</TableHeaderColumn>
 
         </BootstrapTable>
       );

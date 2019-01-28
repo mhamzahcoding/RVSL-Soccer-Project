@@ -23,10 +23,10 @@ import './fixtures.css';
         // trClassName= {rowClassNameFormat}
         >
         <TableHeaderColumn dataField='game'isKey className="bg-info" columnClassName='td-column-string-example'>Game No.</TableHeaderColumn>
-        <TableHeaderColumn dataField='date' columnClassName='td-column-string-example'>Date</TableHeaderColumn>
-        <TableHeaderColumn dataField='away' columnClassName='td-column-string-example'>Away Team</TableHeaderColumn>
-        <TableHeaderColumn dataField='home' columnClassName='td-column-string-example'>Home Team</TableHeaderColumn>
-        <TableHeaderColumn dataField='location' columnClassName='td-column-string-example'>Location</TableHeaderColumn>
+        <TableHeaderColumn dataField='date' className="bg-info" columnClassName='td-column-string-example'>Date</TableHeaderColumn>
+        <TableHeaderColumn dataField='away' className="bg-info" columnClassName='td-column-string-example'>Away Team</TableHeaderColumn>
+        <TableHeaderColumn dataField='home' className="bg-info" columnClassName='td-column-string-example'>Home Team</TableHeaderColumn>
+        <TableHeaderColumn dataField='location' className="bg-info" columnClassName='td-column-string-example'>Location</TableHeaderColumn>
 
         </BootstrapTable>
       );
