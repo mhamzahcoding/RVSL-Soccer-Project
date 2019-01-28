@@ -25,7 +25,7 @@ import fixture from '../../img/fixtures';
         <TableHeaderColumn dataField='date'>Date</TableHeaderColumn>
         <TableHeaderColumn dataField='away'>Away Team</TableHeaderColumn>
         <TableHeaderColumn dataField='home'>Home Team</TableHeaderColumn>
-        <TableHeaderColumn dataField='location'>Location</TableHeaderColumn>
+        <TableHeaderColumn dataField='location' columnClassName='td-column-string-example'>Location</TableHeaderColumn>
 
         </BootstrapTable>
       );
