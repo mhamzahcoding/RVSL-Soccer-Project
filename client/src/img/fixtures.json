@@ -13,6 +13,30 @@
         "date": "02-03-2019",
         "away": "Runn!",
         "home": "Strikers",
-        "location": "Ukrop Park"
+        "location": "Richmond Strikers"
+    },
+    {
+        "id": "2",
+        "game":"3",
+        "date": "02-08-2019",
+        "away": "Benders",
+        "home": "Arsenal",
+        "location": "UKrop Park"
+    },
+    {
+        "id": "3",
+        "game":"4",
+        "date": "02-09-2019",
+        "away": "LOL",
+        "home": "Tigers",
+        "location": "Tigers Richmond Soccer"
+    },
+    {
+        "id": "4",
+        "game":"5",
+        "date": "02-10-2019",
+        "away": "Kickers",
+        "home": "River City",
+        "location": "River City Sportsplex"
     }
 ]}
