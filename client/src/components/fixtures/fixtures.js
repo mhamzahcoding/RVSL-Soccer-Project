@@ -22,11 +22,11 @@ import './fixtures.css';
         condensed 
         // trClassName= {rowClassNameFormat}
         >
-        <TableHeaderColumn dataField='game'isKey className="bg-info" columnClassName='td-column-string-example'>Game No.</TableHeaderColumn>
-        <TableHeaderColumn dataField='date' className="bg-info" columnClassName='td-column-string-example'>Date</TableHeaderColumn>
-        <TableHeaderColumn dataField='away' className="bg-info" columnClassName='td-column-string-example'>Away Team</TableHeaderColumn>
-        <TableHeaderColumn dataField='home' className="bg-info" columnClassName='td-column-string-example'>Home Team</TableHeaderColumn>
-        <TableHeaderColumn dataField='location' className="bg-info" columnClassName='td-column-string-example'>Location</TableHeaderColumn>
+        <TableHeaderColumn dataField='game'isKey className="bg-info font-weight-bold" columnClassName='td-column-string-example'>Game No.</TableHeaderColumn>
+        <TableHeaderColumn dataField='date' className="bg-info font-weight-bold" columnClassName='td-column-string-example'>Date</TableHeaderColumn>
+        <TableHeaderColumn dataField='away' className="bg-info font-weight-bold" columnClassName='td-column-string-example'>Away Team</TableHeaderColumn>
+        <TableHeaderColumn dataField='home' className="bg-info font-weight-bold" columnClassName='td-column-string-example'>Home Team</TableHeaderColumn>
+        <TableHeaderColumn dataField='location' className="bg-info font-weight-bold" columnClassName='td-column-string-example'>Location</TableHeaderColumn>
 
         </BootstrapTable>
       );
