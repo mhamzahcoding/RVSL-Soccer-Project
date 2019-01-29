@@ -34,7 +34,7 @@ class Experience extends Component {
           <thead>
             <tr>
               <th>Team</th>
-              <th>Data Joined</th>
+              <th>Date Joined</th>
             </tr>
             {experience}
           </thead>
