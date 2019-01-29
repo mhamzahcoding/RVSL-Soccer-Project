@@ -18,7 +18,7 @@ class LeagueTable extends Component {
         return (
             <ErrorBoundary>
             <Jumbotron>
-                <p style={{ fontWeight: "bold", textAlign: "center", color: "orangered"}}>
+                <p style={{ fontWeight: "bold", textAlign: "center"}}>
                     Points Table
                 </p>
                 <Table/>
