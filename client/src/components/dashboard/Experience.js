@@ -15,7 +15,7 @@ class Experience extends Component {
       <tr key={exp._id}>
         <td><Link to="/jax">{exp.team}</Link></td>
         <td>
-          <Moment format="YYYY/MM/DD">{exp.from}</Moment>
+          <Moment format="/MM/DD/YYYY">{exp.from}</Moment>
         </td>
         <td>
           <button
