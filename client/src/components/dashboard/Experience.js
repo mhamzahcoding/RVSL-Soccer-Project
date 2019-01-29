@@ -15,12 +15,7 @@ class Experience extends Component {
       <tr key={exp._id}>
         <td><Link to="/jax">{exp.team}</Link></td>
         <td>
-          <Moment format="YYYY/MM/DD">{exp.from}</Moment> -
-          {exp.to === null ? (
-            ' Now'
-          ) : (
-            <Moment></Moment>
-          )}
+          <Moment format="YYYY/MM/DD">{exp.from}</Moment>
         </td>
         <td>
           <button
@@ -39,7 +34,7 @@ class Experience extends Component {
           <thead>
             <tr>
               <th>Team</th>
-              <th>Years</th>
+              <th>Data Joined</th>
             </tr>
             {experience}
           </thead>
