@@ -14,7 +14,7 @@ class FixtureTable extends Component {
           <ErrorBoundary>
           <Jumbotron>
             <div>
-                <p style={{ fontWeight: "bold", textAlign: "center"}}>
+                <p style={{ fontWeight: "bold", textAlign: "center", color: "orangered"}}>
                     Upcoming Matches
                 </p>
             </div>

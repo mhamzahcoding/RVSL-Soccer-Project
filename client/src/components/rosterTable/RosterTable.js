@@ -14,7 +14,7 @@ class RosterTable extends Component {
           <ErrorBoundary>
           <Jumbotron>
             <div>
-                <p style={{ fontWeight: "bold", textAlign: "center"}}>
+                <p style={{ fontWeight: "bold", textAlign: "center", color: "orangered"}}>
                     JAX Roster
                 </p>
             </div>
